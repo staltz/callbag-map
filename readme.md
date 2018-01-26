@@ -13,8 +13,8 @@ const map = require('callbag-map');
 
 const source = map(x => x * 0.1)(fromIter([10,20,30,40]));
 
-source(0, iterate(x => console.log(x))); // 1
-                                         // 2
-                                         // 3
-                                         // 4
+iterate(x => console.log(x))(source); // 1
+                                      // 2
+                                      // 3
+                                      // 4
 ```
