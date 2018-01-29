@@ -1,8 +1,7 @@
-const map = transform => source => (start, sink) => {
+const map = f => source => (start, sink) => {
   if (start !== 0) return;
   source(0, (t, d) => {
-    if (t === 1) sink(t, transform(d));
-    else sink(t, d);
+    sink(t, t === 1 ? f(d) : d)
   });
 };
 
