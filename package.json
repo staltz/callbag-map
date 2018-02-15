@@ -1,19 +1,20 @@
 {
   "name": "callbag-map",
   "version": "1.0.0",
-  "description":
-    "Callbag operator that applies a transformation on data passing through it",
+  "description": "Callbag operator that applies a transformation on data passing through it",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/staltz/callbag-map.git"
   },
-  "main": "index.js",
+  "main": "readme.js",
   "scripts": {
     "test": "tape test.js"
   },
   "author": "staltz.com",
   "license": "MIT",
-  "keywords": ["callbag"],
+  "keywords": [
+    "callbag"
+  ],
   "devDependencies": {
     "tape": "^4.8.0"
   }

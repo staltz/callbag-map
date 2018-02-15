@@ -1,5 +1,5 @@
 const test = require('tape');
-const map = require('./index');
+const map = require('./readme');
 
 test('it maps a pullable source', t => {
   t.plan(29);
