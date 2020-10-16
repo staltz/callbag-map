@@ -1,5 +1,5 @@
-import { Source } from 'callbag';
+import { Callbag } from 'callbag';
 
-export default function map<I, O>(
+export default function map<I, O, TB>(
   f: (d: I) => O,
-): (source: Source<I>) => Source<O>;
+): (source: Callbag<TB, I>) => Callbag<TB, O>;
